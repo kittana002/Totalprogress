@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Monitoring Overview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+        }
+        .flow-card {
+            transition: all 0.3s ease;
+            min-height: 220px;
+        }
+        .flow-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .flow-arrow {
+            color: #cbd5e1; /* slate-300 */
+        }
+        @media (prefers-color-scheme: dark) {
+            .flow-arrow {
+                color: #475569; /* slate-600 */
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 p-4 lg:p-8">
+
+    <div class="container mx-auto">
+        <header class="mb-8 text-center">
+            <h1 class="text-3xl font-bold text-gray-900">ภารวมการดำเนินการทั้งหมด</h1>
+            <p class="text-gray-500">มุมมองภาพรวมแบบขั้นตอน</p>
+        </header>
+
+        <!-- Main Flow Layout -->
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8">
+
+            <!-- A. Overall Status -->
+            <div class="flow-card w-full lg:w-1/4 bg-white p-6 rounded-xl shadow-md border border-slate-200 flex flex-col justify-center items-center text-center">
+                <div class="flex items-center justify-center w-16 h-16 rounded-full bg-red-100 mb-4">
+                    <span class="text-2xl font-bold text-red-700">A</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-800 mb-2">ภาพรวม Up/Down</h2>
+                <p class="text-5xl font-bold text-red-600">2295</p>
+                <p class="text-gray-500">Case</p>
+            </div>
+
+            <!-- Arrow -->
+            <div class="flow-arrow transform lg:rotate-0 rotate-90">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </div>
+
+            <!-- B. Problematic Stores -->
+            <div class="flow-card w-full lg:w-1/4 bg-white p-6 rounded-xl shadow-md border border-slate-200 flex flex-col justify-center items-center text-center">
+                <div class="flex items-center justify-center w-16 h-16 rounded-full bg-sky-100 mb-4">
+                    <span class="text-2xl font-bold text-sky-700">B</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-800 mb-2">ร้านที่แจ้งซ้ำมากกว่า 2 ครั้ง</h2>
+                <p class="text-5xl font-bold text-sky-600">1063</p>
+                <p class="text-gray-500">Case</p>
+            </div>
+
+            <!-- Arrow -->
+            <div class="flow-arrow transform lg:rotate-0 rotate-90">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </div>
+
+            <!-- C. Action Status -->
+            <div class="flow-card w-full lg:w-1/4 bg-white p-6 rounded-xl shadow-md border border-slate-200 flex flex-col justify-center items-center text-center">
+                <div class="flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
+                    <span class="text-2xl font-bold text-blue-700">C</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-800 mb-2">สถานะดำเนินการ</h2>
+                <p class="text-5xl font-bold text-blue-700">1063</p>
+                <p class="text-gray-500">Case</p>
+            </div>
+
+            <!-- Arrow -->
+            <div class="flow-arrow transform lg:rotate-0 rotate-90">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </div>
+
+            <!-- D. Router Replacement -->
+            <div class="flow-card w-full lg:w-1/4 bg-white p-6 rounded-xl shadow-md border border-slate-200 flex flex-col justify-center items-center text-center">
+                <div class="flex items-center justify-center w-16 h-16 rounded-full bg-slate-100 mb-4">
+                    <span class="text-2xl font-bold text-slate-700">D</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-800 mb-2">ข้อมูลเปลี่ยน Router  Huawei AR​</h2>
+                 <p class="text-5xl font-bold text-slate-600">170</p>
+                 <p class="text-gray-500">Case</p>
+            </div>
+
+        </div> <!-- End Main Flow -->
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
